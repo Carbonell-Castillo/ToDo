@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/home/login.css">
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
+
+</head>
+
+<body>
+    <!-- notifications -->
+    <div class="notification">
+        <div class="notification__message message--info">
+            <h1>Info</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button aria-labelledby="button-dismiss">
+            <span id="button-dismiss" hidden>Dismiss</span>
+            <svg viewBox="0 0 100 100" width="10" height="10">
+                <g
+                    stroke="currentColor"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none">
+                    
+                    <g transform="translate(50 50) rotate(45)">
+                        
+                        <path
+                            d="M 0 -30 v 60 z M -30 0 h 60">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </button>
+        </div>
+    </div>
+
+    <section class="container">
+        <section class="login">
+            <section class="container-contactt">
+                <h1 class="text-center">Crear cuenta</h1>
+                <p class="text-center">Seleccione su avatar</p><br>
+                <form action="app/addUser.php" method="POST">
+                    <section class="part1" id="part1">
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <input type="text" required name="name" id="name">
+                                <div class="underline"></div>
+                                <label for="">Nombre completo</label>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <input type="email" required name="email" id="email">
+                                <div class="underline"></div>
+                                <label for="">Email</label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="part2" id="part2">
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <input type="text" required name="nickname" id="nickname">
+                                <div class="underline"></div>
+                                <label for="">¿Como quieres que te llamemos?</label>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="input-data">
+                                <input type="password" required name="password" id="pass">
+                                <div class="underline"></div>
+                                <label for="">Contraseña</label>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="part3" id="part3">
+                        <div class="wrapper">
+                            <section class="avatar">
+                                <div class="section over-hide z-bigger">
+
+
+                                    <div class="section over-hide z-bigger">
+                                        <div class="container pb-5">
+                                            <div class="row justify-content-center pb-5">
+
+                                                <div class="col-12 pb-5">
+                                                    <input class="checkbox-tools" type="radio" name="avatar" id="tool-1" checked value="avatar">
+                                                    <label class="for-checkbox-tools" for="tool-1">
+                                                        <img src="images/home/avatar.jpg" alt="" srcset="">
+                                                    </label>
+                                                    <!--
+                                                    --><input class="checkbox-tools" type="radio" name="avatar" id="tool-2" value="avatar2">
+                                                    <label class="for-checkbox-tools" for="tool-2">
+                                                        <img src="images/home/avatar2.jpg" alt="" srcset="">
+                                                    </label>
+                                                    <!--
+                                                    --><input class="checkbox-tools" type="radio" name="avatar" id="tool-3" value="avatar3">
+                                                    <label class="for-checkbox-tools" for="tool-3">
+                                                        <img src="images/home/avatar3.jpg" alt="" srcset="">
+                                                    </label>
+                                                    <!--
+                                                    --><input class="checkbox-tools" type="radio" name="avatar" id="tool-4" value="avatar4">
+                                                    <label class="for-checkbox-tools" for="tool-4">
+                                                        <img src="images/home/avatar4.jpg" alt="" srcset="">
+                                                        
+                                                    </label>
+                                                    <!--
+                                                    --><input class="checkbox-tools" type="radio" name="avatar" id="tool-5" value="avatar5">
+                                                    <label class="for-checkbox-tools" for="tool-5">
+                                                        <img src="images/home/avatar5.jpg" alt="" srcset="">
+                                                    </label>
+                                                    <!--
+                                                    --><input class="checkbox-tools" type="radio" name="avatar" id="tool-6" value="avatar6">
+                                                    <label class="for-checkbox-tools" for="tool-6">
+                                                        <img src="images/home/avatar6.jpg" alt="" srcset="">
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                        </div>
+                    </section>
+                    <center>
+                        <a href="login.html" id="login">
+                            <button type="button" class="btn btnRegister">Iniciar Sesion</button>
+                        </a>
+                        <button type="button" class="btn btnRegister d-none" id="after" onclick="afterStep()">Anterior</button>
+                        <input type="button" class="btn btnLogin" id="step" value="Siguiente" onclick="nextStep()">
+                        <input type="submit" class="btn btnLogin d-none" id="newCount" value="Crear Cuenta">
+                    </center>
+                </form>
+            </section>
+        </section>
+        <section class="background">
+
+        </section>
+    </section>
+</body>
+
+</html>
+<script src="JavaScript/style.js"></script>
